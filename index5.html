@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+  <input type="text" id="text" placeholder="Your name">
+  <input type="email" placeholder="Your email">
+  <input type="password" placeholder="FGB_12345" maxlength="10" minlength="8">
+  <input type="radio">
+  <input type="checkbox">
+  <input type="submit">
+  <input type="button" value="Кнопочка">
+  <input type="number">
+
+    <script>
+        // let text = document.getElementById('text');
+        //     inputText = document.getElementById('inputText')
+        // // console.log(text);
+
+        // let changetext = function(){
+        //     console.log(this.value);
+        //     let p = document.createElement('p')
+        //     p.textContent = this.value
+        //    text.after(p)
+        //  }
+
+        // // changeText.call(text)
+        // text.addEventListener('change', changeText, false)
+
+        let input = [].slice.call(document.getElementsByTagName('input'))
+        console.log(this.value);
+
+        let changetext = function(){
+            console.log(this.value);
+        }
+        inputs.forEach(function(input){
+            input.addEventListener('change', changeText, false)
+        })
+    </script>
+</body>
+</html>
